@@ -12,10 +12,10 @@
     <body>
         <header>
             <div class="top-bar">
-                <button>Sobre Mim</button>
-                <button>Tecnologias</button>
-                <button>Contatos</button>
-                <button>Projetos</button>
+                <button onclick="focusOn('sobre-mim')">Sobre Mim</button>
+                <button onclick="focusOn('tecnologias')">Tecnologias</button>
+                <button onclick="focusOn('contatos')">Contatos</button>
+                <button onclick="focusOn('projetos')">Projetos</button>
             </div>
         </header>
         
@@ -36,7 +36,7 @@
 
             <!--Seção do Sobre Mim-->
             <div>
-            <h3 class = "topic-center">Sobre Mim</h3>
+            <h3 id = "sobre-mim" class = "sub-topic-center">Sobre Mim</h3>
             <p>
                 Olá, eu sou o <strong>Bruno</strong> e sou apaixonado por resolver problemas e tornar a tecnologia mais acessível e eficiente. Acredito que a programação não é apenas sobre escrever código, mas sim sobre entender <strong>as necessidades das pessoas</strong> e criar <strong>soluções inteligentes</strong>.
             </p>
@@ -48,7 +48,7 @@
 
             <!--Seção das Tecnologias-->
             <div>
-                <h3 class = "topic-center">Tecnologias</h3>
+                <h3 id = "tecnologias" class = "sub-topic-center">Tecnologias</h3>
                 <section class="sectionR">
                 <div class = "sub-section">
                 <ul>
@@ -56,7 +56,7 @@
                         BackEnd;
                         <ul>
                             <li>
-                                Python;
+                                Python <i class="fa-brands fa-python"></i>;
                                 <ul>
                                     <li>Pytest;</li>
                                     <li>Request;</li>
@@ -65,7 +65,7 @@
                                 </ul>
                             </li>
                             <li>
-                                SQLite.
+                                SQLite <i class="fa-solid fa-database"></i>.
                             </li>
                         </ul>
                     </li>
@@ -76,31 +76,32 @@
                     <li>
                         Front-End
                         <ul>
-                            <li>HTML;</li>
-                            <li>CSS; e</li>
-                            <li>JavaScript.</li>
+                            <li>HTML <i class="fa-brands fa-html5"></i>;</li>
+                            <li>CSS <i class="fa-brands fa-css3"></i>; e</li>
+                            <li>JavaScript <i class="fa-brands fa-js"></i>.</li>
                         </ul>
                     </li>
-                    <li>Git e GitHub</li>
+                    <li>Git e GitHub <i class="fa-brands fa-github"></i>.</li>
                 </ul>
                 </div>
             </section>
             </div>
+
             </section>
             </section>
 
             <!--Contatos-->
             <section>
-            <div class="sectionR" style="grid-template-columns: 1fr 1fr 1fr;">
-                <button class = "contatos">
+            <div id = "contatos" class="sectionR" style="grid-template-columns: 1fr 1fr 1fr;">
+                <button onclick="openLinkedin()" class = "contatos">
                     <i class="fa-brands fa-linkedin"></i>
                     Linkedin
                 </button>
-                <button class = "contatos">
+                <button onclick="openGitHub()" class = "contatos">
                     <i class="fa-brands fa-github"></i>
                     GitHub
                 </button>
-                <button class = "contatos">
+                <button onclick="openCurriculo()" class = "contatos">
                     <i class="fa-solid fa-id-card"></i>
                     Currículo
                 </button>
@@ -111,7 +112,7 @@
 
             <!--Projetos-->
             <section>
-                <h2 class="topic-center">Projetos</h2>
+                <h2 id = "projetos" class="topic-center">Projetos</h2>
                 <!--AddAnkiCards-->
                 <div>
                     <h3 style="color: #080" class="project-title" >AddAnkiCards</h3>
@@ -123,5 +124,38 @@
         <footer>
 
         </footer>
+
+        <script>
+            //Função que foca em um elemento específico da página.
+            function focusOn(elementId){
+                const elemento = document.getElementById(elementId);
+                const y = (
+                    elemento.getBoundingClientRect().top + 
+                    window.scrollY - 80
+                );
+                window.scrollTo({ top: y, behavior: "smooth" });
+            }
+            //Abre o Linkedin
+            function openLinkedin(){
+                window.open(
+                    'https://www.linkedin.com/in/bruno-gabriel-ss',
+                    '_blank'
+                )
+            }
+            //Abre o GitHub
+            function openGitHub(){
+                window.open(
+                    'https://github.com/bruno-gabriel-muniz',
+                    '_blank'
+                )
+            }
+            //Abre o meu curriculo
+            function openCurriculo(){
+                window.open(
+                    'https://drive.google.com/file/d/10KkzjztvmBAJS6GJTPs86sSRFsgW0d31/view?usp=sharing',
+                    '_blank'
+                )
+            }
+        </script>
     </body>
 </html>
