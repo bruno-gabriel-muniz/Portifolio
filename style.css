@@ -76,6 +76,14 @@ strong {
     color: white;
 }
 
+.sub-sectionR {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .sectionR {
     display: grid;
     grid-template-columns: 1fr 1fr;
