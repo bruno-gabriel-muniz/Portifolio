@@ -117,6 +117,23 @@ strong {
     .conteiner {width: auto;}
 }
 
+@media screen and (max-width: 450px) {
+    .top-bar {
+        left: 0;
+        right: 0;
+        border-radius: 0px;
+        max-height: 5rem;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    button {
+        flex: 1 0 auto;
+    }
+}
+
+
 .contatos {font-size: 1.25rem;}
 .name-title {
     color: #ccc;
