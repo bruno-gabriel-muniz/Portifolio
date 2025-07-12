@@ -24,7 +24,7 @@ function openGitHub(){
 //Abre o meu curriculo
 function openCurriculo(){
     window.open(
-        'https://drive.google.com/file/d/10KkzjztvmBAJS6GJTPs86sSRFsgW0d31/view?usp=sharing',
+        'https://drive.google.com/file/d/1rFRV80sjfItsBoENJFpTMpsg1ayb1q0M/view?usp=drive_link',
         '_blank'
     )
 }
