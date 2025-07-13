@@ -36,14 +36,3 @@ function toggleDropdown(button) {
     const dropdown = button.nextElementSibling;
     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 }
-
-//Carrega o HTML de um arquivo externo para um elemento específico
-function carregarHTML(id, arquivo) {
-  fetch(arquivo)
-    .then(resp => resp.text())
-    .then(html => {
-      document.getElementById(id).innerHTML = html;
-    });
-}
-
-//carregarHTML("MenuMovel", "temp.html");

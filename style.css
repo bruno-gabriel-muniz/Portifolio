@@ -63,12 +63,13 @@ button {
     border-radius: 5px;
     flex: 1 1 auto;
     padding: 0.5rem;
-    margin: 0.1rem 0.5rem 0.1rem 0.5rem;
+    margin: 0.3rem 0.5rem 0.3rem 0.5rem;
 }
 
 p {
-    text-indent: 5%;
+    text-indent: 2%;
     text-align: left;
+    padding: 0rem 2.5rem;
 }
 
 abbr {
@@ -104,7 +105,9 @@ strong {
 .contatos {color: #880; font-size: 1.25rem; font-weight: 300;text-align: center; padding: 0.5rem;}
 .name-title {color: #ccc; font-size: 2.5rem; font-weight: 400; text-align: center; padding: 1rem;}
 .topic-center {color: #880; font-weight: 300;text-align: center; padding: 0.5rem;}
+.topic-title {color: #880; font-weight: 500; text-align:center; padding: 0.5rem;}
 a.topic-center-a {color: #808; font-weight: 300; text-decoration: underline; text-align: center; padding: 0.5rem;}
+.topic-center-i {color: #880; font-weight: 500;text-align: center; padding: 0.5rem;}
 
 .DivHabilidadesTec{
     background-color: rgba(0, 0, 0, 0);
@@ -132,10 +135,6 @@ margin-top: 0.5rem;
 border-radius: 0 0 5px 5px;
 font-size: 1rem;
 text-align: left;
-}
-
-.dropdown-content p {
-margin: 0.5rem 0;
 }
 
 .active + .dropdown-content {
