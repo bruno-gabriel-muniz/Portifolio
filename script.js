@@ -32,11 +32,6 @@ function openCurriculo(){
 //Função que alterna a visibilidade de Habilidades Técnicas
 function toggleDropdown(button) {
     const active = document.querySelectorAll(".contatos.active");
-    active.forEach(btn => {
-        if (btn !== button) {
-            btn.nextElementSibling.style.display = "none";
-    }
-    });
     button.classList.toggle("active");
     const dropdown = button.nextElementSibling;
     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";

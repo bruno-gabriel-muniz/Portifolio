@@ -86,6 +86,7 @@ a {
 li {
     color: #ccc;
     margin: 0.5rem 0.5rem;
+    font-size: 1.25rem;
 }
 
 strong {
@@ -123,7 +124,7 @@ transform: scale(1.02);
 }
 
 .dropdown-content {
-display: block;
+display: none;
 background-color: #111;
 color: #ccc;
 padding: 1rem;
