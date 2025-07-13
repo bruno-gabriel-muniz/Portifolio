@@ -11,94 +11,72 @@
 
     <body>
         <header>
-            <div class="top-bar">
-                <button onclick="focusOn('sobre-mim')">Sobre Mim <i class="fa-solid fa-image-portrait"></i></button>
-                <button onclick="focusOn('tecnologias')">Tecnologias <i class="fa-solid fa-code"></i></button>
-                <button onclick="focusOn('contatos')">Contatos <i class="fa-solid fa-address-card"></i></button>
-                <button onclick="focusOn('projetos')">Projetos <i class="fa-solid fa-list-check"></i></button>
-            </div>
+            <h1 class = "name-title">
+                Bruno Gabriel 
+                (<abbr title="Transtorno do Espectro Autista"><a class = "topic-center-a" href="https://drive.google.com/drive/folders/1SgjORQUGaz06LFHfWOxtAbJYHS9gVUHI?usp=drive_link" target="_blank">TEA</a></abbr>):
+                <strong class = "topic-center">Dev Back-End (Estágio / Junior)</strong>
+            </h1>
         </header>
         
         <main>
-            <!--Seção do Título Principal-->
+            <!--Menu das Habilidades Técnicas-->
             <section>
-            <h1 class = "name-title">
-                Bruno Gabriel Lourenço de Muniz - <abbr title = "Pessoa Com Deficiência">PCD</abbr> (<a href="https://drive.google.com/drive/folders/1SgjORQUGaz06LFHfWOxtAbJYHS9gVUHI?usp=drive_link" target="_blank"><abbr title="Transtorno do Espectro Autista">TEA</abbr> Nível 1</a>)
-            </h1>
-            <h2 class = topic-center>
-                Dev FullStack e BackEnd
-            </h2>
-            </section>
+                <div class="sectionR">
+                    <div class="DivHabilidadesTec">
+                    <button class="contatos" onclick="toggleDropdown(this)">
+                        <i class="fa-solid fa-code"></i> Linguagens e Frameworks
+                    </button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li> <i class="fa-brands fa-python"></i> Python: Pytest, Requests; e</li>
+                            <li> C++: CMake, Makefile.</li>
+                        </ul>
+                    </div>
+                    </div>
 
-            <!--Sobre Mim e Tecnologias-->
+                    <div class="DivHabilidadesTec">
+                    <button class="contatos" onclick="toggleDropdown(this)">
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Ferramentas
+                    </button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li> <i class="fa-brands fa-github"></i> Git e GitHub;</li>
+                            <li> <i class="fa-solid fa-database"></i> SQLite; e</li>
+                            <li> <i class="fa-brands fa-linux"></i> Linux (usuário).</li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <div class="DivHabilidadesTec">
+                    <button class="contatos" onclick="toggleDropdown(this)">
+                        <i class="fa-solid fa-pen"></i> Arquitetura e Design Patterns
+                    </button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>Separação em camadas;</li>
+                            <li>Princípios SOLID; e</li>
+                            <li>Padrões: Command, State, Singleton.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <!--Menu Móvel-->
             <section>
-            <section class = "sectionR">
-
-            <!--Seção do Sobre Mim-->
-            <div class = "conteiner">
-            <h3 id = "sobre-mim" class = "sub-topic-center">Sobre Mim</h3>
-            <p>
-                Olá, eu sou o <strong>Bruno</strong> e sou apaixonado por resolver problemas e tornar a tecnologia mais acessível e eficiente. Acredito que a programação não é apenas sobre escrever código, mas sim sobre entender <strong>as necessidades das pessoas</strong> e criar <strong>soluções inteligentes</strong>.
-            </p>
-            <br>
-            <p>
-                Atualmente, estou <strong>aprimorando minhas habilidades em Back-End</strong> e expandindo meus conhecimentos em <strong>Front-End</strong>, buscando ser um desenvolvedor <strong>versátil</strong> e pronto para me adaptar às demandas do mercado.
-            </p>
-            </div>
-
-            <!--Seção das Tecnologias-->
-            <div class = "conteiner">
-                <h3 id = "tecnologias" class = "sub-topic-center">Tecnologias</h3>
-                
-                <section class="sectionR">
-                <!--Back-End-->
-                <div class = "sub-section">
-                <ul>
-                    <li>
-                        BackEnd;
-                        <ul>
-                            <li>
-                                Python <i class="fa-brands fa-python"></i>;
-                                <ul>
-                                    <li>Pytest;</li>
-                                    <li>Request;</li>
-                                    <li>OS; e</li>
-                                    <li>Django.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                SQLite <i class="fa-solid fa-database"></i>.
-                            </li>
-                            <li>
-                                GitHub <i class="fa-brands fa-github"></i>.
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <!--Navegação-->
+                <div class="sectionRFixed">
+                    <button> < </button>
+                    <div class="sectionR" id="MenuMovel"></div>
+                    <button> > </button>
                 </div>
-                <!--Front-End-->
-                <div class="sub-section">
-                <ul>
-                    <li>
-                        Front-End
-                        <ul>
-                            <li>HTML <i class="fa-brands fa-html5"></i>;</li>
-                            <li>CSS <i class="fa-brands fa-css3"></i>; e</li>
-                            <li>JavaScript <i class="fa-brands fa-js"></i>.</li>
-                        </ul>
-                    </li>
-                </ul>
-                </div>
-
-                </section>
-            </div>
-
-            </section>
             </section>
 
+        </main>
+
+        <footer>
             <!--Contatos-->
             <section>
-            <div id = "contatos" class="sectionR" style="grid-template-columns: 1fr 1fr 1fr;">
+            <div class="sectionR" style="grid-template-columns: 1fr 1fr 1fr;">
                 <button onclick="openLinkedin()" class = "contatos">
                     <i class="fa-brands fa-linkedin"></i>
                     Linkedin
@@ -113,22 +91,6 @@
                 </button>
             </div>
             </section>
-
-            <hr>
-
-            <!--Projetos-->
-            <section>
-                <h2 id = "projetos" class="topic-center">Projetos</h2>
-                <!--AddAnkiCards-->
-                <div>
-                    <h3 style="color: #080" class="project-title" >AddAnkiCards</h3>
-                </div>
-                
-            </section>
-        </main>
-
-        <footer>
-
         </footer>
 
         <script src="script.js"></script>
