@@ -69,7 +69,7 @@ button {
 p {
     text-indent: 2%;
     text-align: left;
-    padding: 0rem 2.5rem;
+    padding: 0.3rem 2.5rem;
 }
 
 abbr {
@@ -101,6 +101,8 @@ strong {
     justify-content: space-around;
     align-items: stretch;
 }
+
+.divSobre {background-color: rgba(60, 60, 60, 0.75);}
 
 .contatos {color: #880; font-size: 1.25rem; font-weight: 300;text-align: center; padding: 0.5rem;}
 .name-title {color: #ccc; font-size: 2.5rem; font-weight: 400; text-align: center; padding: 1rem;}
