@@ -69,7 +69,7 @@ button {
 p {
     text-indent: 2%;
     text-align: left;
-    padding: 0.3rem 2.5rem;
+    padding: 0.3rem 1.5rem;
 }
 
 abbr {
@@ -107,7 +107,7 @@ strong {
 .contatos {color: #880; font-size: 1.25rem; font-weight: 300;text-align: center; padding: 0.5rem;}
 .name-title {color: #ccc; font-size: 2.5rem; font-weight: 400; text-align: center; padding: 1rem;}
 .topic-center {color: #880; font-weight: 300;text-align: center; padding: 0.5rem;}
-.topic-title {color: #880; font-weight: 500; text-align:center; padding: 0.5rem;}
+.topic-title {background-color: rgba(0, 0, 0, 0.5); border-radius: 10px; color: #880; font-weight: 500; text-align:center; padding: 0.5rem;}
 a.topic-center-a {color: #808; font-weight: 300; text-decoration: underline; text-align: center; padding: 0.5rem;}
 .topic-center-i {color: #880; font-weight: 500;text-align: center; padding: 0.5rem;}
 
