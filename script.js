@@ -29,8 +29,16 @@ function openCurriculo(){
     )
 }
 
+//Abre o projeto TP1-Trabalho2
+function openTP1Trabalho2(){
+    window.open(
+        "https://github.com/bruno-gabriel-muniz/TP1-Trabalho2"
+    )
+}
+
 //Função que alterna a visibilidade de Habilidades Técnicas
-function toggleDropdown(button) {
+function toggleDropdown(button) 
+{
     const active = document.querySelectorAll(".contatos.active");
     button.classList.toggle("active");
     const dropdown = button.nextElementSibling;

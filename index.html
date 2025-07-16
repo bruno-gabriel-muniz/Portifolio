@@ -23,7 +23,7 @@
             <section>
                 <div class="sectionR">
                     <div class="DivHabilidadesTec">
-                        <button class="contatos" onclick="toggleDropdown(this)">
+                        <button onclick="toggleDropdown(this)">
                             <i class="fa-solid fa-code"></i> Linguagens e Frameworks
                         </button>
                         <div class="dropdown-content">
@@ -36,20 +36,21 @@
                     </div>
 
                     <div class="DivHabilidadesTec">
-                        <button class="contatos" onclick="toggleDropdown(this)">
+                        <button onclick="toggleDropdown(this)">
                             <i class="fa-solid fa-screwdriver-wrench"></i> Ferramentas
                         </button>
                         <div class="dropdown-content">
                             <ul>
                                 <li> <i class="fa-brands fa-github"></i> Git e GitHub; (Intermediário)</li>
-                                <li> <i class="fa-solid fa-database"></i> SQLite; (Intermediário) e</li>
-                                <li> <i class="fa-brands fa-linux"></i> Linux (usuário). (Intermediário)</li>
+                                <li> <i class="fa-solid fa-database"></i> SQLite; (Intermediário)</li>
+                                <li> <i class="fa-brands fa-linux"></i> Linux (usuário); (Intermediário) e</li>
+                                <li> <i class="fa-solid fa-file-code"></i> Doxygen. (Básico)</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="DivHabilidadesTec">
-                        <button class="contatos" onclick="toggleDropdown(this)">
+                        <button onclick="toggleDropdown(this)">
                             <i class="fa-solid fa-pen"></i> Arquitetura e Design Patterns
                         </button>
                         <div class="dropdown-content">
@@ -88,30 +89,51 @@
                     </p>
                 </div>
             </section>
-            <!--Projetos-->
-            <section>
-            </section>
-        </main>
-
-        <footer>
             <!--Contatos-->
             <section>
             <div class="sectionR" style="grid-template-columns: 1fr 1fr 1fr;">
-                <button onclick="openLinkedin()" class = "contatos">
+                <button onclick="openLinkedin()">
                     <i class="fa-brands fa-linkedin"></i>
                     Linkedin
                 </button>
-                <button onclick="openGitHub()" class = "contatos">
+                <button onclick="openGitHub()">
                     <i class="fa-brands fa-github"></i>
                     GitHub
                 </button>
-                <button onclick="openCurriculo()" class = "contatos">
+                <button onclick="openCurriculo()">
                     <i class="fa-solid fa-id-card"></i>
                     Currículo
                 </button>
             </div>
             </section>
-        </footer>
+            <!--Projetos-->
+            <section>
+                <h2 class="topic-title">Projetos</h2>
+                <div class="sectionR" style="background-color: rgba(0, 0, 0, 0); column-span: 2;">
+                <div class="divProjetos">
+                    <h3 class="topic-title">TP1-Trabalho2</h3>
+                    <p>
+                        Projeto proposto na matéria de TP1 (Técnicas de Programação 1) da UnB com o intuito de práticar o <strong class = "topic-center-i">uso de boas práticas</strong> e a implementação de <strong class = "topic-center-i">Design Patterns.</strong>
+                    </p>
+                    <h4 class="topic-center-i">Habilidades Usadas</h4>
+                    <ul class= "listaComColunas" style="column-count: 2;">
+                        <li>C++;</li>
+                        <li>CMake;</li>
+                        <li>Doxygen;</li>
+                        <li>Pattern State;</li>
+                        <li>Pattern Command; e</li>
+                        <li>Pattern Singleton.</li>
+                    </ul>
+                </div>
+                <div class="sectionC">
+
+                    <button onclick="openTP1Trabalho2()">Ver Projeto no GitHub <i class="fa-brands fa-github"></i></button>
+
+                    <img src="https://raw.githubusercontent.com/bruno-gabriel-muniz/TP1-Trabalho2/refs/heads/main/Docs/TP1-Trabalho2-Modulos.drawio.png" alt="Imagem do diagrama de módulos do projeto.">
+                </div>
+                </div>
+            </section>
+        </main>
 
         <script src="script.js"></script>
     </body>
